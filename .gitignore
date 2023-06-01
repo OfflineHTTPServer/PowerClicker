@@ -1,5 +1,2 @@
 #Exclude CMake's Build Directory
 build/
-
-#Exclude VSCode Directory
-.vscode/
