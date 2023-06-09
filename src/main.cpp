@@ -1,5 +1,5 @@
 #define TITLE "PowerClicker"
-#define VERSION "1.0"
+#define VERSION "1.1"
 
 #define WINDOW_SIZE_X_PX 540.0f
 #define WINDOW_SIZE_Y_PX 380.0f
@@ -145,6 +145,7 @@ int WINAPI WinMain(
 
 
     ImGui::GetIO().ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+    ImGui::GetIO().IniFilename = NULL;
 
     while (!Window.ShouldClose())
     {
