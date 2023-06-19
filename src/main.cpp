@@ -49,7 +49,7 @@ const char* TimeUnits = "Second\0Minute\0Hour";
 
 
 extern int ToMilliseconds(int, int);
-extern void MouseAction(int, int, int);
+//extern void MouseAction(int, int, int);
 
 
 const char* MouseButtonLabelText = "Mouse Button";
@@ -119,7 +119,34 @@ int WINAPI WinMain(
                 {
                     continue;
                 }
-                MouseAction(MouseButton, PosX, PosY);
+                if (PosX > -1 && PosY > -1)
+                {
+                    SetCursorPos(PosX, PosY);
+                }
+
+                int MouseDownEvent;
+                int MouseUpEvent;
+
+                switch (MouseButton)
+                {
+                case 0:
+                    MouseDownEvent = MOUSEEVENTF_LEFTDOWN;
+                    MouseUpEvent = MOUSEEVENTF_LEFTUP;
+                    break;
+                case 1:
+                    MouseDownEvent = MOUSEEVENTF_RIGHTDOWN;
+                    MouseUpEvent = MOUSEEVENTF_RIGHTUP;
+                    break;
+                case 2:
+                    MouseDownEvent = MOUSEEVENTF_MIDDLEDOWN;
+                    MouseUpEvent = MOUSEEVENTF_MIDDLEUP;
+                    break;
+                default:
+                    break;
+                }
+
+                mouse_event(MouseDownEvent, 0, 0, 0, 0);
+                mouse_event(MouseUpEvent, 0, 0, 0, 0);
             }
         }
     );
