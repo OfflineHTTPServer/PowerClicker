@@ -49,7 +49,6 @@ const char* TimeUnits = "Second\0Minute\0Hour";
 
 
 extern int ToMilliseconds(int, int);
-//extern void MouseAction(int, int, int);
 
 
 const char* MouseButtonLabelText = "Mouse Button";
