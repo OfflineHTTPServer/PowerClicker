@@ -11,8 +11,7 @@ add_executable(
     src/Context.cpp
     src/WindowSize.cpp
     src/ToMilliseconds.cpp
-    src/MouseAction.cpp
-
+    
     lib/imgui/imgui.cpp
     lib/imgui/imgui_demo.cpp
     lib/imgui/imgui_draw.cpp
