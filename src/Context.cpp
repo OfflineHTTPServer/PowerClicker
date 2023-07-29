@@ -1,7 +1,5 @@
 #include "Context.h"
 
-
-
 void PowerClicker::Context::NewFrame()
 {
     ImGui_ImplOpenGL3_NewFrame();
