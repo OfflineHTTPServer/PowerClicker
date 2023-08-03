@@ -3,8 +3,8 @@ import os
 
 DirName: str = "PowerClicker"
 ExecutableName: str = "PowerClicker.exe"
-LicenseFile_Name: str = "LICENSES.txt"
-LicenseFile_Text: str = """
+LicenseFileName: str = "LICENSES.txt"
+LicenseFileText: str = """
 PowerClicker - MIT License
 
 Copyright (c) 2023 Arman Behravan
@@ -98,8 +98,8 @@ def main() -> None:
             stream.write(response.read())
             InstallerStatusMessage("Executable created.")
 
-    with open(f"{DirName}/{LicenseFile_Name}", "w") as stream:
-        stream.write(LicenseFile_Text)
+    with open(f"{DirName}/{LicenseFileName}", "w") as stream:
+        stream.write(LicenseFileText)
         InstallerStatusMessage("License file created.")
 
 if __name__ == '__main__':
