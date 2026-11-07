@@ -12,5 +12,5 @@ This Repository uses the following Third-Party Software:
 - <a href = "https://github.com/ocornut/imgui">Dear ImGui</a> is a Project that helps immensely handling Graphical User Interfaces
 - <a href = "https://github.com/glfw/glfw">GLFW</a> facilitates handling Windows and Input
 
-Their respective Licenses for the Versions that were used in the PowerClicker Project can be found at <a href = "https://github.com/OfflineHTTPServer/PowerClicker/blob/main/LICENSE_GLFW.md"></a> and <a href = ""></a>
+Their respective Licenses for the Versions that were used in the PowerClicker Project can be found at <a href = "https://github.com/OfflineHTTPServer/PowerClicker/blob/main/LICENSES/LICENSE_ImGui.txt">LICENSES/LICENSE_ImGui.txt</a> and <a href = "https://github.com/OfflineHTTPServer/PowerClicker/blob/main/LICENSES/LICENSE_GLFW.md">LICENSES/GLFW.md</a>
      
